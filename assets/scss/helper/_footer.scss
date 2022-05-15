@@ -1,0 +1,181 @@
+.footer{
+    background-color: $blue;
+    background-size: cover;
+    background-position: center;
+    color: $white;
+    padding: 80px 0 30px;
+
+    .img-group {
+        display: flex;
+        justify-content: center;
+
+        img{
+            &:not(:last-child){
+                margin-right: 44px;
+            }
+        }
+    }
+
+   .register-wrap{
+       h4{
+           font-family: $gmid;
+           font-size: $fs + 15px;
+           text-transform: uppercase;
+           text-align: center;
+           padding-bottom: 30px;
+       }
+
+       .form-wrap{
+           padding: 0 80px;
+           input,
+           select{
+               background-color: transparent;
+               border: none;
+               border-bottom: 1px solid #f2f2f2;
+               border-radius: 0;
+               padding-left: 0;
+               color: $white;
+               font-size: $fs;
+               text-transform: uppercase;
+               text-align: center;
+
+               &::placeholder{
+                   color: $white;
+                   font-size: $fs;
+                   text-transform: uppercase;
+                   text-align: center;
+               }
+           }
+           
+           input{
+               padding-left: 4px;
+
+               &[type=submit]{
+                    background-color: $white;
+                    color: $blue;
+                    border: 1px solid $blue;
+                    border-radius: 0;
+                    padding: 7px 30px;
+                    font-size: 22px;
+                    display: block;
+                    margin: 0 auto;
+
+                    &:hover{
+                        color: $black;
+                    }
+               }
+           }
+
+           select{
+               option{
+                   color: $blue;
+                   padding-left: 0;
+               }
+           }
+
+           .btn-wrap{
+               text-align: center;
+               margin-top: 40px;
+           }
+           
+       }
+   }
+
+   .logo-address{
+       margin-top: 40px;
+       text-align: center;
+
+       img{
+           max-width: 215px;
+       }
+
+       p{
+           padding-top: 10px;
+           font-size: $fs + 7px;
+       }
+   }
+
+   .appointment{
+       margin-top: 30px;
+       text-align: center;
+       h5{
+            margin-top: 30px;
+            font-size: $fs + 3px;
+            margin-bottom: 0;
+            padding-bottom: 8px;
+            text-transform: uppercase;
+            line-height: 2em;
+
+        span{
+            text-transform: none;
+            display: inline-block;
+            padding-right: 22px;
+
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+       }
+       p{
+        font-size: $fs - 2px;
+        margin-bottom: 0;
+        padding: 8px 0;
+       }
+
+       img{
+           max-width: 105px;
+       }
+   }
+
+
+   .brought{
+       margin-top: 70px;
+       text-align: center;
+       h6{
+           font-family: $glite;
+           font-size: $fs + 4px;
+           padding-bottom: 15px;
+       }
+
+       figure{
+           font-family: $glite;
+           font-size: $fs - 1px;
+
+           figcaption{
+               padding-top: 5px;
+               text-transform: uppercase;
+           }
+
+           &.icons1{
+               text-align: right;
+                img{
+                    max-width: 122px;
+                }
+                figcaption{
+                    text-align: left;
+                }
+           }
+           &.icons2{
+               text-align: left;
+                img{
+                    max-width: 150px;
+                }
+                figcaption{
+                    text-align: right;
+                }
+           }
+       }
+
+       .uppder-disclaimer{
+           text-transform: uppercase;
+       }
+   }
+
+   .disclaimer{
+       padding-top: 30px;
+       p{
+           font-size: $fs - 4px;
+           text-align: justify;
+       }
+   }
+}

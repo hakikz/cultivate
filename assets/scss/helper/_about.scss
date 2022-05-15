@@ -1,0 +1,38 @@
+.about{
+    text-align: center;
+    padding: 100px 100px;
+
+    &__title{
+        display: block;
+        font-family: $gmid;
+        font-size: $fs + 25px;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+    }
+
+    &__description{
+        display: block;
+        margin-bottom: 60px;
+        p{
+            font-size: $fs + 7px;
+        }
+    }
+
+    &__button{
+        a{
+            background-color: $ash;
+            color: $white;
+            font-family: $gmid;
+            text-transform: uppercase;
+            border-radius: 0;
+            padding: 10px 20px;
+            font-size: $fs + 12px;
+
+            &:hover{
+                background-color: $blue;
+                color: $white;
+            }
+
+        }
+    }
+}

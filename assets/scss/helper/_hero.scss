@@ -1,0 +1,84 @@
+.hero{
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    
+    &__sidebar{
+        height: 100%;
+        width: 20%;
+        background-color: $blue;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        &--nav{
+            width: 100%;
+            padding-left: 0;
+            margin-left: 0;
+            margin-bottom: 0;
+            text-align: center;
+            padding: 30px 30px 50px 30px;
+
+            li{
+                a{
+                    display: block;
+                    padding: 3px;
+                    text-transform: uppercase;
+                    color: $cyan;
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+
+                }
+
+                &.cta{
+                    background-color: $cyan;
+                    padding: 7px 14px;
+
+                    a{
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+
+    &__content{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--logo{
+            position: relative;
+            z-index: 1;
+            img{
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+
+        &::before{
+            content: "";
+            background-color: $ash;
+            opacity: 0.6;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+    }
+
+}
