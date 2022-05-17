@@ -1,6 +1,16 @@
 .about{
     text-align: center;
-    padding: 100px 100px;
+    position: relative;
+    
+    &-text{
+        padding: 100px 100px;
+    }
+
+    &-image{
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
 
     &__title{
         display: block;
