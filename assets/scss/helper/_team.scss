@@ -1,0 +1,175 @@
+.team{
+
+    padding: 100px 0 100px;
+
+    @media screen and (max-width: $medium) {
+        padding: 50px 0 50px;
+    }
+
+    &__container{
+        padding-bottom: 80px;
+
+        @media screen and (max-width: $medium) {
+            padding-bottom: 40px;
+        }
+    }
+
+    &__header{
+        font-family: $gmid;
+        font-size: $fs + 29px;
+        text-align: center;
+
+        @media screen and (max-width: $medium) {
+            font-size: $fs + 16px;
+        }
+    }
+
+    &__subhead{
+        font-family: $glite;
+        font-size: $fs + 7px;
+        text-align: center;
+
+        @media screen and (max-width: $medium) {
+            font-size: $fs + 3px;
+        }
+
+    }
+    
+    &__left{
+        text-align: center;
+        padding: 60px 0;
+
+        @media screen and (max-width: $medium) {
+            padding: 30px 0;
+        }
+
+        &--logo{
+            img{
+                @media screen and (max-width: $medium) {
+                    max-width: 120px;
+                }
+            }
+        }
+
+        &--tag{
+            @media screen and (max-width: $medium) {
+                font-size: $fs + 3px;
+            }
+        }
+
+        &--desc{
+            p{
+                @media screen and (max-width: $medium) {
+                    font-size: $fs + 3px;
+                }
+            }
+        }
+
+    }
+
+    &__slider{
+
+        position: relative;
+
+        .carousel-indicators [data-bs-target]{
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+        }
+
+        .carousel-item{
+            p{
+                position: absolute;
+                bottom: -10px;
+                left: 10px;
+                color: $white;
+                font-size: $fs + 1px;
+            }
+        }
+
+        .float-logo{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            max-width: 120px;
+        }
+    }
+
+    &__button{
+        background-color: $blue;
+        color: $white;
+        text-transform: uppercase;
+        font-family: $gmid;
+        padding: 10px 20px;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        margin: 30px auto 0;
+        max-width: 50%;
+        font-size: $fs + 5px;
+
+        @media screen and (max-width: $medium) {
+            font-size: $fs + 3px;
+        }
+
+        &:hover{
+            background-color: $ash;
+            color: $white;
+        }
+    }
+
+    &__logo{
+
+        &_wrap{
+            padding: 30px 0;
+        }
+
+        &--top{
+            text-align: center;
+            height: 130px;
+        }
+        
+
+        &--subtitle{
+            display: block;
+            padding-top: 12px;
+            p{
+                font-size: $fs + 3px;
+            }
+        }
+
+        &--image{
+            img{
+                max-width: 158px;
+            }
+        }
+
+        &--description{
+            text-align: center; 
+            p{
+                font-size: $fs + 2px;
+            }
+        }
+    }
+    &__side_logo{
+        text-align: center;
+        padding: 50px 0;
+
+        @media screen and (max-width: $medium) {
+            padding: 25px 0;
+        }
+
+        p{
+            font-family: $gbookitalic;
+            padding-top: 10px;
+            font-size: $fs + 3px;
+        }
+
+        img{
+            @media screen and (max-width: $medium) {
+                max-width: 78px;
+            }
+        }
+
+    }
+}

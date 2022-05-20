@@ -1,19 +1,40 @@
 .design{
     padding: 100px 0;
 
+    @media screen and (max-width: $medium) {
+        padding: 50px 0;
+    }
+
     &__description{
 
         padding: 30px 0;
+
+        @media screen and (max-width: $medium) {
+            padding: 30px 0 50px;
+            text-align: center;
+        }
+
         &--title{
             display: block;
             font-size: $fs + 25px;
             font-family: $gmid;
             margin-bottom: 40px;
+
+            @media screen and (max-width: $medium) {
+                font-size: $fs + 15px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
         }
 
         &--details{
             p{
                 font-size: $fs + 7px;
+
+                @media screen and (max-width: $medium) {
+                    font-size: $fs + 3px;
+                }
 
                 &:not(:last-child){
                     margin-bottom: 15px;
@@ -31,6 +52,10 @@
                 color: $white;
                 padding: 10px 20px;
                 border-radius: 0;
+
+                @media screen and (max-width: $medium) {
+                    font-size: $fs + 5px;
+                }
 
                 &:hover{
                     background-color: $ash;

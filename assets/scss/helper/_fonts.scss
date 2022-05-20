@@ -7,8 +7,32 @@
     src: url('../fonts/GothamLight.ttf');
 }
 
+@font-face {
+    font-family: gothamBook;
+    src: url('../fonts/GothamBook.ttf');
+}
+
+@font-face {
+    font-family: gothamBookItalic;
+    src: url('../fonts/GothamBookItalic.ttf');
+}
+
+@font-face {
+    font-family: gothamThin;
+    src: url('../fonts/Gotham-Thin.otf');
+}
+
+@font-face {
+    font-family: futuraPTLite;
+    src: url('../fonts/futura-pt-light.ttf');
+}
+
 $gmid: 'gothamMid';
 $glite: 'gothamLite';
+$gbook: 'gothamBook';
+$gbookitalic: 'gothamBookItalic';
+$gthin: 'gothamThin';
+$flite: 'futuraPTLite';
 
 
 $fs: 12px;

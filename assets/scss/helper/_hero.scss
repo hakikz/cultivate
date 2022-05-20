@@ -4,6 +4,37 @@
     position: relative;
     width: 100%;
     display: flex;
+
+    &__mobile{
+        color: $white;
+        display: none;
+
+        @media screen and (max-width: $medium) {
+            display: flex;
+            position: absolute;
+            top: 0;
+            right: -60px;
+            text-align: center;
+            color: $white;
+            background-color: $blue;
+            width: 60px;
+            height: 60px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        svg{
+            &.close-icon{
+                @media screen and (max-width: $medium) {
+                    display: none;
+                }
+            }
+        }
+
+
+    }
     
     &__sidebar{
         height: 100%;
@@ -16,6 +47,13 @@
         top: 0;
         left: 0;
         z-index: 1;
+        transition: 0.5s left ease-in-out;
+
+        @media screen and (max-width: $medium) {
+            width: 60%;
+            z-index: 9;
+            left: -60%;
+        }
 
         &--nav{
             width: 100%;

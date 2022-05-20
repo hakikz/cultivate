@@ -1,181 +1,262 @@
-.footer{
+.footer {
     background-color: $blue;
     background-size: cover;
     background-position: center;
     color: $white;
     padding: 80px 0 30px;
+    position: relative;
+
+    &__s2top {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        text-decoration: none;
+    }
 
     .img-group {
         display: flex;
         justify-content: center;
 
-        img{
-            &:not(:last-child){
+        img {
+            &:not(:last-child) {
                 margin-right: 44px;
             }
         }
     }
 
-   .register-wrap{
-       h4{
-           font-family: $gmid;
-           font-size: $fs + 15px;
-           text-transform: uppercase;
-           text-align: center;
-           padding-bottom: 30px;
-       }
+    .register-wrap {
+        h4 {
+            font-family: $gbook;
+            font-size: $fs + 15px;
+            text-transform: uppercase;
+            text-align: center;
+            padding-bottom: 30px;
 
-       .form-wrap{
-           padding: 0 80px;
-           input,
-           select{
-               background-color: transparent;
-               border: none;
-               border-bottom: 1px solid #f2f2f2;
-               border-radius: 0;
-               padding-left: 0;
-               color: $white;
-               font-size: $fs;
-               text-transform: uppercase;
-               text-align: center;
+            @media screen and (max-width: $medium) {
+                font-size: $fs + 7px;
+            }
 
-               &::placeholder{
-                   color: $white;
-                   font-size: $fs;
-                   text-transform: uppercase;
-                   text-align: center;
-               }
-           }
-           
-           input{
-               padding-left: 4px;
+        }
 
-               &[type=submit]{
+        .form-wrap {
+            padding: 0 80px;
+
+            @media screen and (max-width: $medium) {
+                padding: 0 40px;
+            }
+
+            input,
+            select {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #f2f2f2;
+                border-radius: 0;
+                padding-left: 0;
+                color: $white;
+                font-size: $fs;
+                text-transform: uppercase;
+                text-align: center;
+
+                &::placeholder {
+                    font-family: $gthin;
+                    color: $white;
+                    font-size: $fs + 5px;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+            }
+
+            input {
+                padding-left: 4px;
+
+                &[type=submit] {
                     background-color: $white;
                     color: $blue;
                     border: 1px solid $blue;
                     border-radius: 0;
                     padding: 7px 30px;
-                    font-size: 22px;
+                    font-size: $fs + 9px;
                     display: block;
                     margin: 0 auto;
+                    font-family: $glite;
 
-                    &:hover{
-                        color: $black;
+                    @media screen and (max-width: $medium) {
+                        font-size: $fs + 4px;
                     }
-               }
-           }
 
-           select{
-               option{
-                   color: $blue;
-                   padding-left: 0;
-               }
-           }
+                    &:hover {
+                        color: $ash;
+                    }
+                }
+            }
 
-           .btn-wrap{
-               text-align: center;
-               margin-top: 40px;
-           }
-           
-       }
-   }
+            select {
+                option {
+                    color: $white;
+                    padding-left: 0;
+                }
+            }
 
-   .logo-address{
-       margin-top: 40px;
-       text-align: center;
+            .btn-wrap {
+                text-align: center;
+                margin-top: 40px;
+            }
 
-       img{
-           max-width: 215px;
-       }
+        }
+    }
 
-       p{
-           padding-top: 10px;
-           font-size: $fs + 7px;
-       }
-   }
+    .logo-address {
+        margin-top: 40px;
+        text-align: center;
 
-   .appointment{
-       margin-top: 30px;
-       text-align: center;
-       h5{
+        img {
+            max-width: 215px;
+        }
+
+        p {
+            padding-top: 10px;
+            font-size: $fs + 7px;
+        }
+    }
+
+    .appointment {
+        margin-top: 30px;
+        text-align: center;
+
+        h5 {
             margin-top: 30px;
+            font-family: $glite;
             font-size: $fs + 3px;
             margin-bottom: 0;
             padding-bottom: 8px;
             text-transform: uppercase;
             line-height: 2em;
 
-        span{
-            text-transform: none;
-            display: inline-block;
-            padding-right: 22px;
+            span {
+                font-family: $glite;
+                text-transform: none;
+                display: block;
+                padding-right: 22px;
 
-            &:last-child{
-                padding-right: 0;
+                &:last-child {
+                    padding-right: 0;
+                }
             }
         }
-       }
-       p{
-        font-size: $fs - 2px;
-        margin-bottom: 0;
-        padding: 8px 0;
-       }
 
-       img{
-           max-width: 105px;
-       }
-   }
+        p {
+            font-size: $fs - 2px;
+            margin-bottom: 0;
+            padding: 8px 0;
+        }
+
+        img {
+            max-width: 105px;
+        }
+    }
 
 
-   .brought{
-       margin-top: 70px;
-       text-align: center;
-       h6{
-           font-family: $glite;
-           font-size: $fs + 4px;
-           padding-bottom: 15px;
-       }
+    .brought {
+        margin-top: 70px;
+        text-align: center;
 
-       figure{
-           font-family: $glite;
-           font-size: $fs - 1px;
+        &__label {
+            font-size: $fs + 4px;
+            font-family: $glite;
+        }
 
-           figcaption{
-               padding-top: 5px;
-               text-transform: uppercase;
-           }
+        &__img {
+            text-align: left;
 
-           &.icons1{
-               text-align: right;
-                img{
+            img {
+                max-width: 145px;
+                margin-top: -10px;
+            }
+        }
+
+        h6 {
+            font-family: $glite;
+            font-size: $fs + 4px;
+            padding-bottom: 15px;
+        }
+
+        figure {
+            font-family: $glite;
+            font-size: $fs - 1px;
+
+            figcaption {
+                padding-top: 5px;
+                text-transform: uppercase;
+            }
+
+            &.icons1 {
+                text-align: right;
+
+                img {
                     max-width: 122px;
                 }
-                figcaption{
+
+                figcaption {
                     text-align: left;
                 }
-           }
-           &.icons2{
-               text-align: left;
-                img{
+            }
+
+            &.icons2 {
+                text-align: left;
+
+                img {
                     max-width: 150px;
                 }
-                figcaption{
+
+                figcaption {
                     text-align: right;
                 }
-           }
-       }
+            }
+        }
 
-       .uppder-disclaimer{
-           text-transform: uppercase;
-       }
-   }
+        .uppder-disclaimer {
+            text-transform: uppercase;
+        }
 
-   .disclaimer{
-       padding-top: 30px;
-       p{
-           font-size: $fs - 4px;
-           text-align: justify;
-       }
-   }
+        .logos {
+            .footer-logo {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+
+                img {
+                    max-width: 90px;
+
+                    @media screen and (max-width: $medium) {
+                        max-width: 60px;
+                    }
+
+                }
+
+            }
+        }
+
+        .upper-disclaimer {
+            font-family: $flite;
+            font-size: $fs + 5px;
+            text-transform: uppercase;
+
+            @media screen and (max-width: $medium) {
+                font-size: $fs + 2px;
+            }
+
+        }
+    }
+
+    .disclaimer {
+        padding-top: 30px;
+
+        p {
+            font-family: $glite;
+            font-size: $fs - 1px;
+            text-align: justify;
+        }
+    }
 }

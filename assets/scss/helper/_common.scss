@@ -2,7 +2,17 @@ body{
     font-family: $glite;
 }
 
-.cultivate-80{
-    width: 80%;
-    margin: 0 0 0 auto;
+.break{
+    display: block;
 }
+
+.preloader{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+// .cultivate-80{
+//     width: 80%;
+//     margin: 0 0 0 auto;
+// }

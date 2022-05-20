@@ -1,15 +1,51 @@
 .about{
     text-align: center;
     position: relative;
+
+    @media screen and (max-width: $medium) {
+        padding: 50px 0;
+    }
     
     &-text{
-        padding: 100px 100px;
+        position: relative;
+        padding: 300px 100px;
+        height: 1075px;
+
+        @media screen and (max-width: $medium) {
+            height: auto;
+            padding: 0;
+        }
+
     }
 
     &-image{
         position: absolute;
         top: 0;
-        z-index: -1;
+        left: -150%;
+        overflow: hidden;
+        transition: 1s left ease-in-out;
+        width: 100%;
+
+        .arrow-wrap {
+            position: absolute;
+            z-index: 2;
+            width: 55px;
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            background-color: rgba($color: $blue, $alpha: 0.64);
+
+            img{
+                width: 34px;
+            }
+
+        }
+
     }
 
     &__title{
@@ -18,13 +54,24 @@
         font-size: $fs + 25px;
         text-transform: uppercase;
         margin-bottom: 60px;
+
+        @media screen and (max-width: $medium) {
+            font-size: $fs + 15px;
+            margin-bottom: 30px;
+        }
+
     }
 
     &__description{
         display: block;
         margin-bottom: 60px;
+
         p{
             font-size: $fs + 7px;
+
+            @media screen and (max-width: $medium) {
+                font-size: $fs + 3px;
+            }
         }
     }
 
@@ -37,6 +84,10 @@
             border-radius: 0;
             padding: 10px 20px;
             font-size: $fs + 12px;
+
+            @media screen and (max-width: $medium) {
+                font-size: $fs + 5px;
+            }
 
             &:hover{
                 background-color: $blue;
